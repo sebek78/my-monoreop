@@ -1,6 +1,6 @@
 {
-  "root": "apps/running",
-  "sourceRoot": "apps/running/src",
+  "root": "apps/running-stats",
+  "sourceRoot": "apps/running-stats/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,13 +9,16 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/running",
-        "index": "apps/running/src/index.html",
+        "outputPath": "dist/apps/running-stats",
+        "index": "apps/running-stats/src/index.html",
         "baseHref": "/",
-        "main": "apps/running/src/main.tsx",
-        "polyfills": "apps/running/src/polyfills.ts",
-        "tsConfig": "apps/running/tsconfig.app.json",
-        "assets": ["apps/running/src/favicon.ico", "apps/running/src/assets"],
+        "main": "apps/running-stats/src/main.tsx",
+        "polyfills": "apps/running-stats/src/polyfills.ts",
+        "tsConfig": "apps/running-stats/tsconfig.app.json",
+        "assets": [
+          "apps/running-stats/src/favicon.ico",
+          "apps/running-stats/src/assets"
+        ],
         "styles": [],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
@@ -24,8 +27,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/running/src/environments/environment.ts",
-              "with": "apps/running/src/environments/environment.prod.ts"
+              "replace": "apps/running-stats/src/environments/environment.ts",
+              "with": "apps/running-stats/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -40,12 +43,12 @@
     "serve": {
       "executor": "@nrwl/web:dev-server",
       "options": {
-        "buildTarget": "running:build",
+        "buildTarget": "running-stats:build",
         "hmr": true
       },
       "configurations": {
         "production": {
-          "buildTarget": "running:build:production",
+          "buildTarget": "running-stats:build:production",
           "hmr": false
         }
       }
@@ -54,14 +57,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/running/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/running-stats/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/running"],
+      "outputs": ["coverage/apps/running-stats"],
       "options": {
-        "jestConfig": "apps/running/jest.config.js",
+        "jestConfig": "apps/running-stats/jest.config.js",
         "passWithNoTests": true
       }
     }

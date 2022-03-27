@@ -1,7 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "running": "apps/running",
-    "running-e2e": "apps/running-e2e"
+    "running-stats": "apps/running-stats",
+    "running-stats-e2e": "apps/running-stats-e2e"
   }
 }
