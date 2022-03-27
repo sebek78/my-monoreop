@@ -1,7 +1,7 @@
 {
-  "version": 2,
-  "projects": {
-    "running-stats": "apps/running-stats",
-    "running-stats-e2e": "apps/running-stats-e2e"
-  }
+    "version": 2,
+    "projects": {
+        "running-stats": "apps/running-stats",
+        "running-stats-e2e": "apps/running-stats-e2e"
+    }
 }

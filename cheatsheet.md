@@ -4,7 +4,8 @@
 
 ### Docs
 
-[React Plugin Docs](https://nx.dev/react/overview)
+[React Plugin Docs](https://nx.dev/react/overview)<br>
+[Environment Variables](https://nx.dev/guides/environment-variables#environment-variables)
 
 ### Setup
 
